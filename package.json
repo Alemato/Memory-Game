@@ -1,0 +1,22 @@
+{
+  "name": "mwt-memory-game",
+  "version": "1.0.0",
+  "description": "A simple Memory Game",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "serve": "webpack serve"
+  },
+  "keywords": [],
+  "author": "Alessandro Mattei",
+  "email": "alessandro.mattei1@student.univaq.it",
+  "license": "MIT",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1"
+  }
+}
