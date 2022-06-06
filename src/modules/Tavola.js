@@ -7,6 +7,7 @@ function Tavola(dimensione) {
     if (dimensione % 2 !== 0 && dimensione <= 8) {
         console.log("la dimensione non è valida");
     } else {
+        this.numeroCarte = (dimensione * dimensione) / 2;
         this.element = init();
         this.carte = carte;
     }
@@ -38,13 +39,12 @@ function Tavola(dimensione) {
         const gameEl = document.querySelector('.tavola');
         gameEl.appendChild(boardContainerEl);
 
-        return boardEl;
+        return boardContainerEl;
     }
 
     function creaCarte() {
-        const numeroElementi = (dimensione * dimensione) / 2;
-        console.log("numero Elementi : " + numeroElementi);
-        const carteScelte = shuffle(cartePossibili).slice(0, numeroElementi);
+        const numeroCarte = (dimensione * dimensione) / 2;
+        const carteScelte = shuffle(cartePossibili).slice(0, numeroCarte);
         console.log("Carte scelte:");
         console.log(carteScelte);
         const carteDaCreare = shuffle([...carteScelte, ...carteScelte]);
@@ -62,14 +62,20 @@ function Tavola(dimensione) {
         });
     }
 
-    function addEventFlip(){
-        carte.forEach(carta => {
-            carta.el.addEventListener('click', function () {
-                const giraCarta = new Event('flip-card');
-                console.log("gira la ruota");
-                carta.el.dispatchEvent(giraCarta);
-            });
-        });
+
+    this.resetGameTavola = function resetGame() {
+        console.log("distruggo gli oggetti le carte e resetto l'array");
+        const n = carte.length;
+        for (let i = 0; i < n; i++) {
+            console.log(carte[i]);
+            carte[i].resetGame();
+            delete carte[i];
+        }
+        for (let i = 0; i < n; i++) {
+            carte.pop();
+        }
+        console.log(carte);
+        return true;
     }
 
 

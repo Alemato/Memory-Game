@@ -1,3 +1,8 @@
+body {
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+    font-family: 'Courgette', cursive;
+}
+
 html {
     width: 100%;
     height: 100%;
@@ -20,7 +25,7 @@ html {
     margin-bottom: 20px;
 }
 
-.tavola{
+.tavola {
     margin: -185px auto 0 auto;
     width: fit-content;
     -webkit-animation: slide-in-bck-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -51,7 +56,7 @@ html {
 }
 
 .board,
-.win{
+.win {
     border-radius: 5px;
     box-shadow: 0 25px 50px rgb(33 33 33 / 25%);
     background-color: #ffffff;
@@ -133,7 +138,7 @@ html {
     color: #6f00fc;
 }
 
-.menu-container{
+.menu-container {
     position: relative;
     width: 500px;
     margin: auto;
@@ -147,7 +152,7 @@ html {
     text-align: center;
 }
 
-.menu-difficolta{
+.menu-difficolta {
     padding-right: 30px;
     padding-left: 30px;
     padding-bottom: 30px;
@@ -156,7 +161,7 @@ html {
 
 }
 
-.menu-container.flipped {
+.menu-container.flipped, .tavola.flipped {
     -webkit-animation: slit-out-vertical 0.5s ease-in both;
     animation: slit-out-vertical 0.5s ease-in both;
 }
@@ -179,6 +184,7 @@ html {
         z-index: -1;
     }
 }
+
 @keyframes slit-out-vertical {
     0% {
         -webkit-transform: translateZ(0) rotateY(0);
@@ -215,6 +221,7 @@ html {
         opacity: 1;
     }
 }
+
 @keyframes slide-in-bck-center {
     0% {
         -webkit-transform: translateZ(600px);

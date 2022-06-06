@@ -66,6 +66,15 @@ function CartaProtoObj() {
         return containerCard;
     }
 
+    this.resetGame = function () {
+        console.log("rimuovo l'event listener flip-card");
+        const containerCard = this.el;
+        containerCard.removeEventListener('click', function (){
+            const giraCarta = new Event('flip-card');
+            containerCard.dispatchEvent(giraCarta);
+        });
+    }
+
 
 }
 
