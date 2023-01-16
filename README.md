@@ -55,12 +55,38 @@ npm run webpack serve
 ## Il Gioco
 Il gioco presenterà al primo avvio un menu nel quale si potrà scegliere la difficoltà
 
+![menu di gioco](/doc/menu.png)
+
 Una volta scelta la difficoltà verrà generato il campo di gioco.
+
+![terreno 4 x 4](/doc/terreno4x4.png)
 
 Selezionando una casella, la casella verrà scoperta e verrà visualizzato il simbolo della carta. Tale carta rimarrà girata fino a quanto sul tavolo di gioco non ci siano 2 carte scoperte.
 
-Una volta che sul tavolo ci siano 2 carte scoperte il gioco verificherà che siano uguali, nel caso in cui siano uguali le carte di gioco rimaneranno scoperte. Nel caso contrario dopo 1 secondo il gioco provvederà a coprire le carte selezionate.
+![terreno 4 x 4 selezionata una carta](/doc/terreno4x4unaCarta.png)
 
-Nel caso in cui si vuole resettare il gioco che è in uno stato di "gioco in corso" è possibile cliccare il tasto "Mi Arrendo". Tale tasto attiva la rivelazione di tutte le carte di gioco e dopo 2 secondi verrà chiesto se si vuole rigiocare un'altra partita.
+Una volta che sul tavolo ci siano 2 carte scoperte il gioco verificherà che siano uguali, nel caso in cui siano uguali le carte di gioco rimaneranno scoperte.
+
+![terreno 4 x 4 selezionate 2 carte uguali](/doc/terreno4x4match.png)
+
+![terreno 4 x 4 selezionate 2 carte](/doc/terreno4x4DueCarte.png)
+
+Nel caso contrario dopo 1 secondo il gioco provvederà a coprire le carte selezionate.
+
+![terreno 4 x 4](/doc/terreno4x4.png)
+
+Nel caso in cui si vuole resettare il gioco che è in uno stato di "gioco in corso" è possibile cliccare il tasto "Mi Arrendo".
+
+![terreno 2 x 2](/doc/terreno2x2.png)
+
+![terreno 2 x 2 mi arrendo step 1](/doc/miArrendo.png)
+
+Tale tasto attiva la rivelazione di tutte le carte di gioco e dopo 2 secondi verrà chiesto se si vuole rigiocare un'altra partita.
+
+![terreno 2 x 2 mi arrendo step 2](/doc/miArrendoSecodoStep.png)
 
 Nel momento in cui sono state trovate tutte le carte il gioco termina dando al giocatore le statistiche della partita giocata (Numero di mosse e tempo impiegato).
+
+![terreno 2 x 2 vittoria](/doc/Win.png)
+
+![terreno 2 x 2 vittoria](/doc/WinStep2.png)
