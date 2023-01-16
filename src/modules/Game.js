@@ -1,7 +1,7 @@
 import Tavola from "./Tavola";
 /**
  *  Game.js è responsabile dell'orchestrazione del gioco
- *  al suo interno troviamo le funzioni che azionano le varie creazione degli oggetti di gioco,
+ *  al suo interno troviamo le funzioni che azionano le varie creazioni degli oggetti di gioco,
  *  nonchè la logica e lo stato del gioco stesso
  */
 function Game(gameContainer) {
@@ -112,15 +112,15 @@ function Game(gameContainer) {
                 stato.flippedCards.push(carta);
             }
             console.log(stato.flippedCards);
-            // controllo se ho aggiunto la seconda carta devo vede se matchia o meno
+            // controllo se ho aggiunto la seconda carta, devo vedere se sono uguali o meno
             if (stato.flippedCards.length === 2) {
-                // timeout per l'animazione di ruota -> controllo -> non matchiano -> ruoto tutto
+                // timeout per l'animazione di ruota -> controllo -> non sono uguali -> ruoto tutto
                 setTimeout(matched, 500);
             }
 
         } else {
-            // ho 2 o più carte girate e non me ne sono accorto prima
-            // timeout per l'animazione di ruota -> controllo -> non matchiano -> ruoto tutto
+            // ho 2 o più carte scoperte e non me ne sono accorto prima
+            // timeout per l'animazione di ruota -> controllo -> non sono uguali -> ruoto tutto
             setTimeout(matched, 500);
         }
     }

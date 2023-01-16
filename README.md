@@ -2,7 +2,7 @@
 ## Gioco del memory con varie difficoltà
 Questo mini progetto javascript è stato sviluppato per l'esame di Linguaggi per sviluppo lato client-side di applicazioni web per il Master in Mobile e Web Technologies.
 
-È stato sviluppato il classico gioco del memory che prevede 4 livelli di facoltà:
+È stato sviluppato il classico gioco del memory che prevede 4 livelli di difficoltà:
 - 2 X 2 
 - 4 X 4 
 - 6 X 6 
@@ -61,11 +61,11 @@ Una volta scelta la difficoltà verrà generato il campo di gioco.
 
 ![terreno 4 x 4](/doc/terreno4x4.png)
 
-Selezionando una casella, la casella verrà scoperta e verrà visualizzato il simbolo della carta. Tale carta rimarrà girata fino a quanto sul tavolo di gioco non ci siano 2 carte scoperte.
+Selezionando una casella, questa verrà scoperta e verrà visualizzato il simbolo della carta. Tale carta rimarrà scoperta fino a quanto sul tavolo di gioco non ci saranno 2 carte scoperte.
 
 ![terreno 4 x 4 selezionata una carta](/doc/terreno4x4unaCarta.png)
 
-Una volta che sul tavolo ci siano 2 carte scoperte il gioco verificherà che siano uguali, nel caso in cui siano uguali le carte di gioco rimaneranno scoperte.
+Quando sul tavolo ci saranno 2 carte scoperte il gioco verificherà che siano uguali, nel caso in cui siano uguali le carte di gioco resteranno scoperte.
 
 ![terreno 4 x 4 selezionate 2 carte](/doc/terreno4x4DueCarte.png)
 
@@ -85,7 +85,7 @@ Tale tasto attiva la rivelazione di tutte le carte di gioco e dopo 2 secondi ver
 
 ![terreno 2 x 2 mi arrendo step 2](/doc/miArrendoSecodoStep.png)
 
-Nel momento in cui sono state trovate tutte le carte il gioco termina dando al giocatore le statistiche della partita giocata (Numero di mosse e tempo impiegato).
+Nel momento in cui sono state trovate tutte le carte, il gioco termina dando al giocatore le statistiche della partita giocata (Numero di mosse e tempo impiegato).
 
 ![terreno 2 x 2 vittoria](/doc/Win.png)
 
