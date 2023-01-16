@@ -67,9 +67,9 @@ Selezionando una casella, la casella verrà scoperta e verrà visualizzato il si
 
 Una volta che sul tavolo ci siano 2 carte scoperte il gioco verificherà che siano uguali, nel caso in cui siano uguali le carte di gioco rimaneranno scoperte.
 
-![terreno 4 x 4 selezionate 2 carte uguali](/doc/terreno4x4match.png)
-
 ![terreno 4 x 4 selezionate 2 carte](/doc/terreno4x4DueCarte.png)
+
+![terreno 4 x 4 selezionate 2 carte uguali](/doc/terreno4x4match.png)
 
 Nel caso contrario dopo 1 secondo il gioco provvederà a coprire le carte selezionate.
 
