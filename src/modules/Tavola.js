@@ -1,9 +1,13 @@
 import {cartePossibili} from "./utils";
 import Carta from "./Carta";
 
+/**
+ *  Tavola.js è responsabile della generazione del tavolo di gioco
+ */
 function Tavola(dimensione) {
     const carte = [];
-
+    console.log("la dimensione è");
+    console.log(dimensione);
     if (dimensione % 2 !== 0 && dimensione <= 8) {
         console.log("la dimensione non è valida");
     } else {

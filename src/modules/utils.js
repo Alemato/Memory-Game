@@ -1,3 +1,7 @@
+/**
+ *  utils.js è responsabile della persistenza delle carte di gioco,
+ *  rappresenta il "mazzo" da cui attingere
+ */
 export const cartePossibili = [ {nome: 'snowman', icona:'⛄'},
                                 {nome: 'person with ball', icona:'⛹'},
                                 {nome: 'hot beverage', icona:'☕'},

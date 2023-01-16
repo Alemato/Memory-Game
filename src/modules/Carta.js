@@ -1,8 +1,15 @@
+/**
+ * Carta.js è responsabile della creazione della carta di gioco
+ */
 function Carta(nome, simbolo) {
     this.nome = nome;
     this.simbolo = simbolo;
 }
 
+/**
+ * Funzione prototipo della carta
+ * @constructor
+ */
 function CartaProtoObj() {
     this.flipped = false;
     this.blocked = false;

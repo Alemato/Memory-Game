@@ -41,7 +41,10 @@ html {
     cursor: pointer;
     font-size: 18pt;
 }
-
+.btn-start.disabled {
+    background: #757575 !important;
+    color: #FFF !important;
+}
 .disabled {
     color: #757575;
 }

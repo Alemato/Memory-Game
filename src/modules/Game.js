@@ -1,6 +1,9 @@
 import Tavola from "./Tavola";
-import tavola from "./Tavola";
-
+/**
+ *  Game.js è responsabile dell'orchestrazione del gioco
+ *  al suo interno troviamo le funzioni che azionano le varie creazione degli oggetti di gioco,
+ *  nonchè la logica e lo stato del gioco stesso
+ */
 function Game(gameContainer) {
     const stato = {
         gameStarted: false,
@@ -68,7 +71,8 @@ function Game(gameContainer) {
         stato.tavolo.carte.forEach(carta => {
             setTimeout(ruotaCarta.bind(null, carta), 500);
         });
-        setTimeout(gameOver, 3000);
+        stato.domStopButton.classList.add('disabled');
+        setTimeout(gameOver, 2000);
     }
 
     function preparaTavolo(e) {
@@ -147,6 +151,7 @@ function Game(gameContainer) {
                     Ti sei arreso!<br />
                     vuoi rigiocare?
                 </span>`;
+        stato.domStopButton.classList.remove('disabled');
         stato.domStopButton.removeEventListener('click', handleDomStopButtonLoser, false);
         endGame();
     }

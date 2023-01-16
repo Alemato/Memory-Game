@@ -1,5 +1,8 @@
+/**
+ * Menu.js è responsabile della creazione del menu di gioco
+ */
 function Menu(gameContainer) {
-    const {menuContainer, dif2per2, dif4per4, dif6per6, dif8per8} = createDOM();
+    const {menuContainer, dif2per2, dif4per4, dif6per6, dif8per8} = createDOM(); // lasciate per un possibile console.log
     this.menuContainer = menuContainer;
     this.dif2per2 = dif2per2;
     this.dif4per4 = dif4per4;
